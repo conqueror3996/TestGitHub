@@ -15,5 +15,13 @@ namespace WindowsFormsApplication1
         {
             InitializeComponent();
         }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            double a = Double.Parse(txtA.Text);
+            double b = Double.Parse(txtB.Text);
+            double c = a + b;
+            txtResult.Text = c.ToString();
+        }
     }
 }
